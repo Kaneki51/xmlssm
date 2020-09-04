@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.kaneki</groupId>
+    <artifactId>xmlssm</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <!--spring容器是用来扫描除了controller之外的东西，spring容器和spring-mvc容器是两个容器，
+        spring-mvc是spring的子容器，从子容器里面可以访问父容器的东西，反过来则不行；spring-mvc
+        容器用来扫描controller就行了。-->
+    <dependencies>
+        <!--添加spring-mvc依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.1.6.RELEASE</version>
+        </dependency>
+    </dependencies>
+</project>
